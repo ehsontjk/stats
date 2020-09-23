@@ -4,7 +4,7 @@ package stats
 import (
 	"github.com/ehsontjk/bank/v2/pkg/types"
 )
-func Avg(payments []types.Payment) types.Money  {
+func Avg(payments []types.Payment, status types.Status) types.Money  {
 	sum := types.Money(0)
 	max := types.Money(0)
 	for _, payment := range payments{
@@ -19,7 +19,7 @@ func Avg(payments []types.Payment) types.Money  {
 return max
 
 }
-func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
+func TotalInCategory(payments []types.Payment, status types.Status) types.Money {
 
 	sum := types.Money(0)
 	
