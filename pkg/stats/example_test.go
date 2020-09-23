@@ -75,8 +75,8 @@ ID: 45,
 		Status: "OK",
 			},
 	}
-result := Avg(payments, "OK")
+result := Avg(payments)
 fmt.Println(result)
-//Output: 15
+//Output: 20
 
 }
