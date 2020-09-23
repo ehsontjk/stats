@@ -29,6 +29,8 @@ func TotalInCategory(payments []types.Payment, status types.Status) types.Money 
 		
 		
 			sum += payment.Amount
+		}else if payment.Status == "INPROGRESS" {
+			sum += payment.Amount
 		}
 		
 	}
