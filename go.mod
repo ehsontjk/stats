@@ -1,4 +1,4 @@
-module github.com/ehsontjk/stats
+module github.com/ehsontjk/stats/v2
 
 go 1.15
 
