@@ -12,7 +12,7 @@ func ExampleTotalInCategory() {
 			ID: 12,
 			Amount: 40_000_00,
 			Category: "bank",
-			Status: "OK",
+			Status: "FAILED",
 		},
 		{
 			ID: 13,
@@ -24,11 +24,12 @@ func ExampleTotalInCategory() {
 			ID: 34,
 			Amount: 48_000_00,
 			Category: "auto",
-			Status: "OK",	
+			Status: "FAILED",	
 		},
 		{
 ID: 5,
 Amount: 48_000_00,
+Status: "FAILED",
 	},
 	{
 		ID: 45,
@@ -44,6 +45,6 @@ Amount: 48_000_00,
 	
 	totalInCategory := TotalInCategory(payments, "auto")
 	fmt.Println(totalInCategory)
-	// Output: 8800000
+	// Output: 4100000
 }
 

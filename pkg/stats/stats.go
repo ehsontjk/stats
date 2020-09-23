@@ -9,7 +9,8 @@ func Avg(payments []types.Payment) types.Money  {
 	max := types.Money(0)
 	for _, payment := range payments{
 	
-		if payment.Status == "OK"{
+		if payment.Status == "FAILED"{
+		}else {
 		sum += payment.Amount
 		max = sum / types.Money(len(payments))
 	}
@@ -23,9 +24,11 @@ func TotalInCategory(payments []types.Payment, category types.Category) types.Mo
 	sum := types.Money(0)
 	
 	for _, payment := range payments{
-		if payment.Status == "OK" {
+		if payment.Status == "FAILED" {
 		
-		sum += payment.Amount
+		
+		}else {
+			sum += payment.Amount
 		}
 		
 	}
