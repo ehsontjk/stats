@@ -12,30 +12,30 @@ func ExampleTotalInCategory() {
 			ID: 12,
 			Amount: 40_000_00,
 			Category: "bank",
-			Status: "OK",
+			Status: "StatusOk",
 		},
 		{
 			ID: 13,
 			Amount: 20_000_00,
 			Category: "auto",
-			Status: "OK",
+			Status: "StatusOk",
 		},
 		{
 			ID: 34,
 			Amount: 48_000_00,
 			Category: "auto",
-			Status: "INPROGRESS",	
+			Status: "StatusInProgress",	
 		},
 		{
 ID: 5,
 Amount: 48_000_00,
-Status: "INPROGRESS",
+Status: "StatusInProgress",
 	},
 	{
 		ID: 45,
 		Amount: 41_000_00,
 		Category: "bank",
-		Status: "FAILED",
+		Status: "StatusFail",
 			},
 
 			
