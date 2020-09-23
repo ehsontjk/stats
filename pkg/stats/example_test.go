@@ -24,7 +24,7 @@ func ExampleTotalInCategory() {
 			ID: 34,
 			Amount: 48_000_00,
 			Category: "auto",
-			Status: "FAILED",	
+			Status: "OK",	
 		},
 		{
 ID: 5,
@@ -43,10 +43,10 @@ Status: "OK",
 	
 
 	
-	totalInCategory := TotalInCategory(payments, "OK")
+	totalInCategory := TotalInCategory(payments, "auto", "OK")
 	fmt.Println(totalInCategory)
 
-	// Output: 14900000
+	// Output: 6800000
 }
 func ExampleAvg() {
 	payments := []types.Payment{
