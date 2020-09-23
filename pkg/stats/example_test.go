@@ -46,7 +46,7 @@ Status: "OK",
 	totalInCategory := TotalInCategory(payments, "OK")
 	fmt.Println(totalInCategory)
 
-	// Output: 8100000
+	// Output: 14900000
 }
 func ExampleAvg() {
 	payments := []types.Payment{
