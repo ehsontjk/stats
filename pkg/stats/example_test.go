@@ -43,7 +43,7 @@ Status: "INPROGRESS",
 	
 
 	
-	totalInCategory := TotalInCategory(payments, "OK")
+	totalInCategory := TotalInCategory(payments, "FAILED")
 	fmt.Println(totalInCategory)
 
 	// Output: 15600000
