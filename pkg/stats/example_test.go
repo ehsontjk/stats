@@ -25,7 +25,7 @@ func ExampleTotalInCategory() {
 			ID: 34,
 			Amount: 48_000_00,
 			Category: "auto",
-			Status: "StatusFail",
+			Status: "FAIL",
 				
 		},
 		{
@@ -38,7 +38,7 @@ Status: "StatusInProgress",
 		ID: 45,
 		Amount: 41_000_00,
 		Category: "auto",
-		Status: "StatusFail",
+		Status: "FAIL",
 		
 			},
 
