@@ -30,7 +30,7 @@ func TotalInCategory(payments []types.Payment, status types.Status) types.Money 
 		
 		
 			
-		}else if payment.Status == status{
+		}else {
 			sum += payment.Amount
 		}
 	}

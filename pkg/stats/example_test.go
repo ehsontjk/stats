@@ -37,7 +37,7 @@ Status: "INPROGRESS",
 		ID: 45,
 		Amount: 41_000_00,
 		Category: "bank",
-		Status: "INPROGRESS",
+		Status: "FAIL",
 		
 			},
 
@@ -49,7 +49,7 @@ Status: "INPROGRESS",
 	totalInCategory := TotalInCategory(payments, "OK")
 	fmt.Println(totalInCategory)
 
-	// Output: 6000000
+	// Output: 10800000
 }
 func ExampleAvg() {
 	payments := []types.Payment{
