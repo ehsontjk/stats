@@ -24,13 +24,12 @@ func TotalInCategory(payments []types.Payment, category types.Category) types.Mo
 	sum := types.Money(0)
 	
 	for _, payment := range payments{
-		
-		if payment.Category == category {
+		if payment.Status == "StatusFail" {
+
+		}else if payment.Category == category {
 		
 			sum += payment.Amount
 		
-			
-		}else if payment.Status == "StatusFail"{
 			
 		}
 	}
