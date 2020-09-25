@@ -15,9 +15,9 @@ func TestCategoriesAvg(t *testing.T) {
 		{ID:5, Category: "fun", Amount: 5_000_00},
 	}
 	expected := map[types.Category]types.Money{
-		"auto": 8_000_00,
-		"food": 2_000_00,
-		"fun": 5_000_00,
+		"auto": 1_600_00,
+		"food": 400_00,
+		"fun": 1000_00,
 	}
 	result := CategoriesAvg(payments)
 	if !reflect.DeepEqual(expected, result) {
