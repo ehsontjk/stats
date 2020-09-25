@@ -10,10 +10,14 @@ func TestCategoriesAvg(t *testing.T) {
 	payments := []types.Payment{
 		{ID:1, Category: "auto", Amount: 1_000_00},
 		{ID:2, Category: "food", Amount: 2_000_00},
-		{ID:8, Category: "food", Amount: 7_000_00},
-		{ID:7, Category: "food", Amount: 15_000_00},
-		{ID:1, Category: "auto", Amount: 1_000_00},
-		{ID:1, Category: "auto", Amount: 1_000_00},
+		{ID:8, Category: "food", Amount: 2_000_00},
+		{ID:7, Category: "food", Amount: 2_000_00},
+		{ID:10, Category: "auto", Amount: 1_000_00},
+		{ID:9, Category: "auto", Amount: 1_000_00},
+		{ID:3, Category: "auto", Amount: 2_000_00},
+		{ID:70, Category: "food", Amount: 2_000_00},
+		{ID:12, Category: "food", Amount: 2_000_00},
+		{ID:77, Category: "food", Amount: 14_000_00},
 		
 	}
 	expected := map[types.Category]types.Money{
