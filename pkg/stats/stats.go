@@ -67,7 +67,7 @@ func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 		third := map[types.Category]types.Money{
 			"auto": second["auto"] - first["auto"],
 			"food": second["food"] - first["food"],
-			"mobile": second["mobile"] - first["mobile"],
+			
 	   }
 	   return third
 	}
