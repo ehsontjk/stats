@@ -71,6 +71,6 @@ func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 			
 			
 	   }
-	   delete(third, "mobile")
+	   
 	   return third
 	}
