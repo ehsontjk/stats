@@ -51,6 +51,7 @@ func TestPeriodsDynamic(t *testing.T) {
 		
 	}
 	third := PeriodsDynamic(first, second)
+	delete(third, "mobile")
 	if !reflect.DeepEqual(expected, third) {
 		t.Errorf("invalid result, expected: %v, actual: %v", expected, third)
 	}
