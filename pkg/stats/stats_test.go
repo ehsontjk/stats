@@ -32,6 +32,7 @@ func TestPeriodsDynamic(t *testing.T) {
 		
 		
 		
+		
 	}
 	second := map[types.Category]types.Money{
 		"auto": 5_999_99,
@@ -39,10 +40,12 @@ func TestPeriodsDynamic(t *testing.T) {
 		
 		
 		
+		
 	}
 	expected := map[types.Category]types.Money{
 		"auto": 3_000_00,
 		"food": 5_000_00,
+		
 		
 		
 		
