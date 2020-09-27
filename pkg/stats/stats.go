@@ -3,6 +3,7 @@ package stats
 
 import (
 	"github.com/ehsontjk/bank/v2/pkg/types"
+	
 )
 func Avg(payments []types.Payment) types.Money  {
 	sum := types.Money(0)
@@ -64,13 +65,19 @@ func CategoriesAvg(payments []types.Payment) map[types.Category]types.Money {
 
 	func PeriodsDynamic(first map[types.Category]types.Money, second map[types.Category]types.Money) map[types.Category]types.Money {
 		
-		third := map[types.Category]types.Money{
-			"auto": second["auto"] - first["auto"],
-			"food": second["food"] - first["food"],
+		third := map[types.Category]types.Money{}
+		for key, amount := range second {
+			third[key] += amount
+		}
+		for key, amount := range first {
+			third[key] -= amount
+		}
 			
-			
-			
-	   }
-	   
-	   return third
+return third
 	}
+		
+
+			
+			
+			
+	   
